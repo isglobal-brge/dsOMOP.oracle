@@ -30,4 +30,4 @@ To use it, simply access the management dashboard of a project and go to the `Re
   <img src="man/figures/add_oracle_resource.png" alt="Add Oracle Resource">
 </p>
 
-The parameters for creating an `OMOP CDM Database (Oracle)` resource are the same as those described in the [OMOP CDM Resource Creation guide](https://github.com/isglobal-brge/dsOMOP/blob/main/README.md#creating-omop-cdm-resources), except for the `driver` parameter, which will always be Oracle.
+The parameters for creating an `OMOP CDM Database (Oracle)` resource are the same as those described in the [OMOP CDM Resource Creation guide](https://github.com/isglobal-brge/dsOMOP/blob/main/README.md#creating-resources-from-gui), except for the `driver` parameter, which will always be Oracle.
