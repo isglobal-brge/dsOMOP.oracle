@@ -17,3 +17,17 @@ The installation of `dsOMOP.oracle` will fail if either of these two components 
 For a comprehensive setup, you can use the provided Dockerfile to create an environment with all the necessary dependencies for using `dsOMOP.oracle`. The Dockerfile sets up a rock instance and includes all the required Oracle Instant Client components, as well as the following packages: `oracle.resourcer`, `dsOMOP`, and `dsOMOP.oracle`.
 
 You can find the Dockerfile at the following link: [dsOMOP.oracle Dockerfile](inst/docker/Dockerfile)
+
+## Usage 
+
+Having `dsOMOP.oracle` properly installed on an Opal server will extend the resource creation interface provided by the Opal server. Specifically, it will add a new category under the creation of OMOP CDM resources from `dsOMOP`, named `OMOP CDM Database (Oracle)`.
+
+This new category allows users to easily configure and manage resources specifically designed for OMOP CDM databases using Oracle directly from the GUI.
+
+To use it, simply access the management dashboard of a project and go to the `Resources` subsection. In the `Add Resource` option, you will find the `OMOP CDM` category, and under it, the `OMOP CDM Database (Oracle)` option:
+
+<p align="center">
+  <img src="man/figures/add_oracle_resource.png" alt="Add Oracle Resource">
+</p>
+
+The parameters for creating an `OMOP CDM Database (Oracle)` resource are the same as those described in the [OMOP CDM Resource Creation guide](https://github.com/isglobal-brge/dsOMOP/blob/main/README.md#creating-omop-cdm-resources), except for the `driver` parameter, which will always be Oracle.
