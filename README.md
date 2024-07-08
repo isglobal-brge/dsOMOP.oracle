@@ -1,4 +1,4 @@
-# Oracle dsOMOP Extension
+# dsOMOP Oracle Extension
 
 `dsOMOP.oracle` is an extension of the [`dsOMOP`](https://github.com/isglobal-brge/dsOMOP) package. It expands its functionality to support the interaction with Oracle databases. 
 
