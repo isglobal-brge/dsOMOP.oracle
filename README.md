@@ -12,6 +12,12 @@ The installation of `dsOMOP.oracle` will fail if either of these two components 
 
 **Important:** Please note that the `oracle.resourcer` package requires the Oracle Instant Client Basic and SDK components to be installed on your system. For more detailed installation instructions, please refer to the [oracle.resourcer installation guide](https://github.com/isglobal-brge/oracle.resourcer/blob/main/README.md#installation).
 
+## Installation verification
+
+Please note that packages which do not expose assign and aggregate methods may be installed correctly on the system, but will not appear in the list of installed packages in the `Administration` > `DataSHIELD` > `(Profile)` > `Packages` section of the Opal UI. This is to avoid displaying other installed packages and dependencies, while focusing solely on DataSHIELD items.
+
+In the case of `dsOMOP.oracle`, users can verify the installation in the `Administration` > `R` > `(Profile)` > `Packages` section of the Opal UI. This section lists all installed packages and can be filtered by name.
+
 ## Example Dockerfile
 
 For a comprehensive setup, you can use the provided Dockerfile to create an environment with all the necessary dependencies for using `dsOMOP.oracle`. The Dockerfile sets up a rock instance and includes all the required Oracle Instant Client components, as well as the following packages: `oracle.resourcer`, `dsOMOP`, and `dsOMOP.oracle`.
