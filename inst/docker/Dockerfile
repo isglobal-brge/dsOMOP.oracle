@@ -1,4 +1,4 @@
-# This is an example of a Dockerfile to set up a rock instance (version 6.3) compatible with the use of the Oracle dsOMOP extension. 
+# This is an example of a Dockerfile to set up a rock instance (version 6.3) compatible with the use of the dsOMOP Oracle extension. 
 FROM datashield/rock-base:6.3
 
 # Install devtools
