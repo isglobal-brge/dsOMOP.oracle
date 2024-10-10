@@ -16,6 +16,8 @@
 
   # Register the schema query for Oracle
   dsOMOP::registerSchemaQuery("oracle", "ALTER SESSION SET CURRENT_SCHEMA = {schema}", override = TRUE)
+  dsOMOP::registerSchemaRetrievalQuery("oracle", "SELECT SYS_CONTEXT('USERENV', 'CURRENT_SCHEMA') FROM DUAL", override = TRUE)
 }
 
 dsOMOP::getSchemaQueries()
+dsOMOP::getSchemaRetrievalQueries()
